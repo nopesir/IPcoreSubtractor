@@ -1,0 +1,14 @@
+# Output products list for <sub_core>
+sub_core.asy
+sub_core.gise
+sub_core.ngc
+sub_core.sym
+sub_core.vhd
+sub_core.vho
+sub_core.xco
+sub_core.xise
+sub_core\doc\c_addsub_v11_0_readme.txt
+sub_core\doc\c_addsub_v11_0_vinfo.html
+sub_core\doc\ds214_addsub.pdf
+sub_core_flist.txt
+sub_core_xmdf.tcl

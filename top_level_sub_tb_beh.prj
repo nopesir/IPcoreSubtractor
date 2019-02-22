@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/sub_core.vhd"
+vhdl work "top_level_sub.vhd"
+vhdl work "top_level_sub_tb.vhd"
