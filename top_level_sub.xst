@@ -1,9 +1,6 @@
-set -tmpdir "xst/projnav.tmp"
-set -xsthdpdir "xst"
-run
--ifn top_level_sub.prj
--ofn top_level_sub
--ofmt NGC
+set -tmpdir "/home/luigiferrettino/Desktop/subtractor_s_8/xst/projnav.tmp"
+set -xsthdpdir "/home/luigiferrettino/Desktop/subtractor_s_8/xst"
+run -compileonly yes
 -p xc6slx4-3-tqg144
 -top top_level_sub
 -opt_mode Speed
@@ -51,3 +48,4 @@ run
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
+-ifn top_level_sub.prj

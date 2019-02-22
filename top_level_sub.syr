@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
---> Reading design: top_level_sub.prj
+--> 
+Reading design: top_level_sub.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -108,10 +111,10 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Windows\System32\subtractor_s_8\ipcore_dir\sub_core.vhd" into library work
+Parsing VHDL file "/home/luigiferrettino/Desktop/subtractor_s_8/ipcore_dir/sub_core.vhd" into library work
 Parsing entity <sub_core>.
 Parsing architecture <sub_core_a> of entity <sub_core>.
-Parsing VHDL file "C:\Windows\System32\subtractor_s_8\top_level_sub.vhd" into library work
+Parsing VHDL file "/home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub.vhd" into library work
 Parsing entity <top_level_sub>.
 Parsing architecture <Behavioral> of entity <top_level_sub>.
 
@@ -128,7 +131,7 @@ Elaborating entity <sub_core> (architecture <sub_core_a>) from library <work>.
 =========================================================================
 
 Synthesizing Unit <top_level_sub>.
-    Related source file is "C:\Windows\System32\subtractor_s_8\top_level_sub.vhd".
+    Related source file is "/home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub.vhd".
     Summary:
 	no macro.
 Unit <top_level_sub> synthesized.
@@ -328,12 +331,13 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.42 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.07 secs
  
 --> 
 
-Total memory usage is 4522960 kilobytes
+
+Total memory usage is 386364 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
