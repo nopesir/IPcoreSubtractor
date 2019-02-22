@@ -1,27 +1,18 @@
+--------------------------------------------------------------------------------
+-- Company: Politecnico di Torino
+-- Engineer: Luigi Ferrettino S254300
+--
+-- Create Date:   19:01:24 02/09/2019
+-- Design Name:   subtractor_s_8
+-- Module Name:   top_level_sub.vhd
+-- Project Name:  subtractor_s_8
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    20:30:03 02/18/2019 
--- Design Name: 
--- Module Name:    top_level_sub - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
-
+-- Entity definition
 entity top_level_sub is
 	PORT (
     a : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -48,6 +39,7 @@ END COMPONENT;
 
 begin
 
+-- Instantiate the IPcore
 U1 : sub_core
   PORT MAP (
     a => a,

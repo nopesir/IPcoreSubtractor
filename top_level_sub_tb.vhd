@@ -3,12 +3,13 @@
 -- Engineer: Luigi Ferrettino S254300
 --
 -- Create Date:   20:39:22 02/09/2019
--- Design Name:   top_level_sub
+-- Design Name:   subtractor_s_8
 -- Module Name:   top_level_sub_tb.vhd
 -- Project Name:  subtractor_s_8  
 -- 
 -- VHDL Test Bench for module: top_level_sub
 --------------------------------------------------------------------------------
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE std.textio.ALL; 
@@ -21,7 +22,6 @@ END top_level_sub_tb;
 ARCHITECTURE behavior OF top_level_sub_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
- 
     COMPONENT top_level_sub
     PORT(
          a : IN  std_logic_vector(7 downto 0);
@@ -33,17 +33,17 @@ ARCHITECTURE behavior OF top_level_sub_tb IS
     END COMPONENT;
     
 
-   --Inputs
+   -- Inputs
    signal a : std_logic_vector(7 downto 0) := (others => '0');
    signal b : std_logic_vector(7 downto 0) := (others => '0');
    signal clk : std_logic := '0';
    signal ce : std_logic := '0';
 	
-	--Expected and error
+	-- Expected and error
 	signal exp_s: std_logic_vector(7 downto 0) := (others => '0');
 	signal err_s: std_logic := '0';
 
- 	--Outputs
+ 	-- Outputs
    signal s : std_logic_vector(7 downto 0);
  
 BEGIN
@@ -66,7 +66,7 @@ BEGIN
 		WAIT FOR 10 ns;
 	END PROCESS Clk_proc;
 
-  
+	-- Vector process definition
 	VectorProc: PROCESS
 		FILE vectorfile: text; 
 		VARIABLE inputline: line;
@@ -97,7 +97,7 @@ BEGIN
 	END PROCESS VectorProc; 
 
 
-
+	-- Expected process definition
 	ExpectedProc: PROCESS
 		FILE expectedfile: text; 
 		VARIABLE expectedline: line;
@@ -118,7 +118,7 @@ BEGIN
 	WAIT;
 	END PROCESS ExpectedProc; 
 
-
+	-- Check process definition
 	CheckProc: PROCESS
 	VARIABLE check: bit := '1';
 	BEGIN

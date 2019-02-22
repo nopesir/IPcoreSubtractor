@@ -2,3 +2,5 @@ xst -intstyle ise -ifn "C:/Windows/System32/subtractor_s_8/top_level_sub.xst" -o
 xst -intstyle ise -ifn "C:/Windows/System32/subtractor_s_8/top_level_sub.xst" -ofn "C:/Windows/System32/subtractor_s_8/top_level_sub.syr" 
 xst -intstyle ise -ifn "/home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub.xst" -ofn "/home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub.syr" 
 netgen -intstyle ise -ar Structure -tm top_level_sub -w -dir netgen/synthesis -ofmt vhdl -sim top_level_sub.ngc top_level_sub_synthesis.vhd 
+xst -intstyle ise -ifn "/home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub.xst" -ofn "/home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub.syr" 
+netgen -intstyle ise -ar Structure -tm top_level_sub -w -dir netgen/synthesis -ofmt vhdl -sim top_level_sub.ngc top_level_sub_synthesis.vhd 

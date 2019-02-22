@@ -5,14 +5,14 @@ Parameter TMPDIR set to /home/luigiferrettino/Desktop/subtractor_s_8/xst/projnav
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to /home/luigiferrettino/Desktop/subtractor_s_8/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: top_level_sub.prj
@@ -50,8 +50,8 @@ Parsing entity <top_level_sub>.
 Parsing architecture <Behavioral> of entity <top_level_sub>.
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 2.38 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.34 secs
  
 --> 
 
