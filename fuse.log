@@ -1,4 +1,4 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "secureip" -o "/home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub_tb_isim_beh.exe" -prj "/home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub_tb_beh.prj" "work.top_level_sub_tb" 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub_tb_isim_beh.exe -prj /home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub_tb_beh.prj work.top_level_sub_tb 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -9,7 +9,7 @@ Parsing VHDL file "/home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub_tb
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 100308 KB
-Fuse CPU Usage: 940 ms
+Fuse CPU Usage: 860 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package textio
@@ -32,5 +32,5 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 22 VHDL Units
 Built simulation executable /home/luigiferrettino/Desktop/subtractor_s_8/top_level_sub_tb_isim_beh.exe
 Fuse Memory Usage: 1214428 KB
-Fuse CPU Usage: 1100 ms
-GCC CPU Usage: 90 ms
+Fuse CPU Usage: 1010 ms
+GCC CPU Usage: 1630 ms

@@ -48,6 +48,7 @@ ARCHITECTURE behavior OF top_level_sub_tb IS
  
 BEGIN
  
+ 
 	-- Instantiate the Unit Under Test (UUT)
    uut: top_level_sub PORT MAP (
           a => a,
@@ -56,6 +57,7 @@ BEGIN
           ce => ce,
           s => s
         );
+
 
    -- Clock process definition
 	Clk_proc: PROCESS
@@ -66,13 +68,13 @@ BEGIN
 		WAIT FOR 10 ns;
 	END PROCESS Clk_proc;
 
+
 	-- Vector process definition
 	VectorProc: PROCESS
 		FILE vectorfile: text; 
 		VARIABLE inputline: line;
 		VARIABLE num: integer := 0;
-		VARIABLE temp_a: std_logic_vector(7 downto 0);
-		VARIABLE temp_b: std_logic_vector(7 downto 0);
+		VARIABLE temp: std_logic_vector(7 downto 0);
 		
 	BEGIN
 		file_open(vectorfile, "vectors.txt", read_mode);
@@ -84,11 +86,11 @@ BEGIN
 			
 			WAIT UNTIL clk='1' AND clk'EVENT;
 			readline(vectorfile, inputline);
-			read(inputline, temp_a);
-			a <= temp_a;
+			read(inputline, temp);
+			a <= temp;
 			readline(vectorfile, inputline);
-			read(inputline, temp_b);
-			b <= temp_b;
+			read(inputline, temp);
+			b <= temp;
 			
 			num := num + 1;
 		END LOOP; 
@@ -118,6 +120,7 @@ BEGIN
 	WAIT;
 	END PROCESS ExpectedProc; 
 
+
 	-- Check process definition
 	CheckProc: PROCESS
 	VARIABLE check: bit := '1';
@@ -131,8 +134,6 @@ BEGIN
 		
 		WAIT FOR 1 ns;
 		ASSERT (err_s /= '1') REPORT "Unexpected behaviour" SEVERITY error;
-		
-		
 	END PROCESS CheckProc;
 
 END;

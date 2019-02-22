@@ -26,6 +26,7 @@ end top_level_sub;
 
 architecture Behavioral of top_level_sub is
 
+
 COMPONENT sub_core
   PORT (
     a : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -38,6 +39,7 @@ END COMPONENT;
 
 
 begin
+
 
 -- Instantiate the IPcore
 U1 : sub_core
